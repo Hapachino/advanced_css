@@ -17,9 +17,9 @@
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
+            opacity: 0; 
         }
-    }
+    }        
 
     &:active {
         transform: translateY(-1px);
@@ -32,6 +32,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
